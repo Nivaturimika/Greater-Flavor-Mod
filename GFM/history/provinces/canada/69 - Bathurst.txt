@@ -1,5 +1,6 @@
-owner = ENG
-controller = ENG
+owner = QUE
+controller = QUE
+add_core = QUE
 add_core = ACA
 add_core = MRU
 add_core = NEN

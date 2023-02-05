@@ -350,31 +350,12 @@ country_event = {
         year = 1867
         any_owned_province = { is_core = CAN }
         NOT = { exists = CAN }
+		NOT = { exists = QUE }
         is_possible_vassal = CAN
     }
 
     mean_time_to_happen = {
         months = 6
-        modifier = {
-            factor = 15
-            has_country_flag = CAN_independence_refused
-        }
-        modifier = {
-            factor = 3
-            NOT = { has_country_flag = charlottetown_conference }
-        }
-        modifier = {
-            factor = 0.8
-            any_state = {
-                any_owned_province = { is_core = CAN }
-                average_militancy = 3
-            }
-        }
-        modifier = {
-            factor = 0.5
-            year = 1870
-            NOT = { has_country_flag = CAN_independence_refused }
-        }
     }
 
     option = {
@@ -392,9 +373,19 @@ country_event = {
                 remove_core = ENG
             }
         }
+		QUE = {
+            all_core = {
+                change_controller = ENG
+                remove_core = ENG
+            }
+        }
         any_owned = {
             limit = { is_core = CAN }
             secede_province = CAN
+        }
+		any_owned = {
+            limit = { is_core = QUE }
+            secede_province = QUE
         }
         create_vassal = CAN
         CAN = {
@@ -433,7 +424,7 @@ country_event = {
             consciousness = 1
         }
         ai_chance = {
-            factor = 80
+            factor = 99
             modifier = {
                 factor = 0
                 OR = {
@@ -461,26 +452,6 @@ country_event = {
                 has_global_flag = berlin_conference
             }
             modifier = {
-                factor = 0.75
-                war_policy = jingoism
-            }
-            modifier = {
-                factor = 1.25
-                war_policy = anti_military
-            }
-            modifier = {
-                factor = 1.5
-                war_policy = pacifism
-            }
-            modifier = {
-                factor = 1.2
-                militancy = 3
-            }
-            modifier = {
-                factor = 1.2
-                militancy = 5
-            }
-            modifier = {
                 factor = 2
                 RPL = { ai = no }
             }
@@ -503,44 +474,20 @@ country_event = {
             }
         }
         ai_chance = {
-            factor = 20
+            factor = 1
             modifier = {
-                factor = 1.75
+                factor = 75
                 OR = {
                     government = absolute_monarchy
                     government = absolute_empire
                 }
             }
             modifier = {
-                factor = 0.5
+                factor = 0
                 OR = {
 					government = democracy
 					has_country_flag = Government_Democracy	
 				}
-            }
-            modifier = {
-                factor = 1.5
-                war_policy = jingoism
-            }
-            modifier = {
-                factor = 1.25
-                war_policy = pro_military
-            }
-            modifier = {
-                factor = 0.75
-                war_policy = anti_military
-            }
-            modifier = {
-                factor = 0.5
-                war_policy = pacifism
-            }
-            modifier = {
-                factor = 0.8
-                militancy = 3
-            }
-            modifier = {
-                factor = 0.8
-                militancy = 5
             }
         }
     }
