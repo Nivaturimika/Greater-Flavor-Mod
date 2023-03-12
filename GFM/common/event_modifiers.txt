@@ -5070,3 +5070,28 @@ gco_survived_modifier = {
 	goods_demand = -0.1
 	icon = 17
 }
+
+mex_shitty_minery_fifty = {
+	mine_rgo_eff = -0.5
+	icon = 12
+}
+
+mex_shitty_minery_forty = {
+	mine_rgo_eff = -0.4
+	icon = 12
+}
+
+mex_shitty_minery_thirty = {
+	mine_rgo_eff = -0.3
+	icon = 12
+}
+
+mex_shitty_minery_twenty = {
+	mine_rgo_eff = -0.2
+	icon = 12
+}
+
+mex_shitty_minery_ten = {
+	mine_rgo_eff = -0.1
+	icon = 12
+}

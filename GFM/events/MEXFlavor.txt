@@ -328,6 +328,7 @@ country_event = {
 			name = santa_ana_rule
 			duration = -1
 		}
+		any_owned = { add_province_modifier = { name = mex_shitty_minery_fifty duration = -1 } }
     }
 }
 

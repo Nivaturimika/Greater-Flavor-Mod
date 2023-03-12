@@ -1613,4 +1613,30 @@ political_decisions = {
 			}
 		}
 	}
+	
+	fix_mining_mex = {
+	picture = mining_union_upper_katanga #PLACEHOLDER
+		potential = {
+			tag = MEX
+			NOT = { has_country_flag = fixed_mining_mex }
+			NOT = { year = 1880 }
+			ai = no
+		}
+		
+		allow = {
+			war = no
+			money = 100000
+		}
+		
+		effect = {
+			set_country_flag = fixed_mining_mex
+			any_owned = {
+				remove_province_modifier = mex_shitty_minery_fifty
+				remove_province_modifier = mex_shitty_minery_forty
+				remove_province_modifier = mex_shitty_minery_thirty
+				remove_province_modifier = mex_shitty_minery_twenty
+				remove_province_modifier = mex_shitty_minery_ten
+			}
+		}
+	}
 }

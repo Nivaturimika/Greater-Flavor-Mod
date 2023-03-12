@@ -1165,6 +1165,52 @@ political_decisions = {
 						}
 					}
 				}
+				AND = {
+					MEX = {
+						exists = yes
+						NOT = { has_country_flag = fixed_mining_mex }
+						NOT = { year = 1880 }
+					}
+					OR = {
+						MEX = {
+							year = 1830
+							NOT = { year = 1840 }
+							any_owned_province = { NOT = { has_province_modifier = mex_shitty_minery_fifty } }
+						}
+						MEX = {
+							year = 1840
+							NOT = { year = 1850 }
+							OR = {
+								any_owned_province = { NOT = { has_province_modifier = mex_shitty_minery_forty } }
+								any_owned_province = { has_province_modifier = mex_shitty_minery_fifty }
+							}
+						}
+						MEX = {
+							year = 1850
+							NOT = { year = 1860 }
+							OR = {
+								any_owned_province = { NOT = { has_province_modifier = mex_shitty_minery_thirty } }
+								any_owned_province = { has_province_modifier = mex_shitty_minery_forty }
+							}
+						}
+						MEX = {
+							year = 1860
+							NOT = { year = 1870 }
+							OR = {
+								any_owned_province = { NOT = { has_province_modifier = mex_shitty_minery_twenty } }
+								any_owned_province = { has_province_modifier = mex_shitty_minery_thirty }
+							}
+						}
+						MEX = {
+							year = 1870
+							NOT = { year = 1880 }
+							OR = {
+								any_owned_province = { NOT = { has_province_modifier = mex_shitty_minery_ten } }
+								any_owned_province = { has_province_modifier = mex_shitty_minery_twenty }
+							}
+						}
+					}
+				}
 			}
         }
         allow = { 
@@ -1217,6 +1263,86 @@ political_decisions = {
 					}
 				}
 			}
+			
+			random_owned = {
+				limit = {
+					owner = {
+						tag = MEX
+						NOT = { has_country_flag = fixed_mining_mex }
+						year = 1830
+						NOT = { year = 1840 }
+					}
+				}
+				owner = { any_owned = { add_province_modifier = { name = mex_shitty_minery_fifty duration = -1 } } }
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						tag = MEX
+						NOT = { has_country_flag = fixed_mining_mex }
+						year = 1840
+						NOT = { year = 1850 }
+					}
+				}
+				owner = { any_owned = { remove_province_modifier = mex_shitty_minery_fifty add_province_modifier = { name = mex_shitty_minery_forty duration = -1 } } }
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						tag = MEX
+						NOT = { has_country_flag = fixed_mining_mex }
+						year = 1850
+						NOT = { year = 1860 }
+					}
+				}
+				owner = { any_owned = { remove_province_modifier = mex_shitty_minery_forty add_province_modifier = { name = mex_shitty_minery_thirty duration = -1 } } }
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						tag = MEX
+						NOT = { has_country_flag = fixed_mining_mex }
+						year = 1860
+						NOT = { year = 1870 }
+					}
+				}
+				owner = { any_owned = { remove_province_modifier = mex_shitty_minery_thirty add_province_modifier = { name = mex_shitty_minery_twenty duration = -1 } } }
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						tag = MEX
+						NOT = { has_country_flag = fixed_mining_mex }
+						year = 1870
+						NOT = { year = 1880 }
+					}
+				}
+				owner = { any_owned = { remove_province_modifier = mex_shitty_minery_twenty add_province_modifier = { name = mex_shitty_minery_ten duration = -1 } } }
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						tag = MEX
+						OR = {
+							AND = {
+								NOT = { has_country_flag = fixed_mining_mex }
+								year = 1880
+							}
+							has_country_flag = fixed_mining_mex
+						}
+					}
+				}
+				owner = {
+					any_owned = {
+						remove_province_modifier = mex_shitty_minery_fifty
+						remove_province_modifier = mex_shitty_minery_forty
+						remove_province_modifier = mex_shitty_minery_thirty
+						remove_province_modifier = mex_shitty_minery_twenty
+						remove_province_modifier = mex_shitty_minery_ten
+					}
+				}
+			}
+
 			random_owned = {
 				limit = {
 					owner = {

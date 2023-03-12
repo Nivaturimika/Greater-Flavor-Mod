@@ -541,6 +541,7 @@ country_event = {
 		political_reform = no_meeting
 		political_reform = state_press
 		ruling_party_ideology = conservative
+		any_owned = { add_province_modifier = { name = mex_shitty_minery_fifty duration = -1 } }
 	}
 }
 

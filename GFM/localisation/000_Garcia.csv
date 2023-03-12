@@ -230,3 +230,10 @@ EVTDESC4207064;If Italy were committed to colonizing the land surrounding the St
 EVTDESC4207065;$FROM$ is objecting to our colonization of Tunis, asserting that it too has a valid claim to the land. They have decided to threaten war should we not relinquish Tunis, since they object to any one country other than themselves controlling the Strait of Sicily. To relinquish their claim would be to accept a slap to the face of their imperial ambitions. What shall we do?;;;;;;;;;;;;;
 MEX_100;Arizona;;;;;;;;;;;;;
 EVTDESC4207066;Colombia's workers rights movement faces a devastating blow today as a massacre of protesting United Fruit Company employees came to light. After a strike in Ciénaga begun, in which workers demanded reforms such as ending hiring through sub-contractors and raising pay, the corporation's private army and the Colombian military fired on potentially thousands of workers. General Cortés Vargas is liable, per his own claim, for 47 workers' murders, though the exact number of casualties is unknown. Soldiers individually report having thrown the dead into the sea or buried them in mass graves. All this because of a collaboration between American business interests and the Colombian government to root out so-called "communist" elements. The massacre's scope has yet to, and potentially never will, be revealed.;;;;;;;;;;;;;
+mex_shitty_minery_fifty;Extremely War-Thorned Mines;;;;;;;;;;;;;
+mex_shitty_minery_forty;Very Severly War-Thorned Mines;;;;;;;;;;;;;
+mex_shitty_minery_thirty;Severly War-Thorned Mines;;;;;;;;;;;;;
+mex_shitty_minery_twenty;Moderately War-Thorned Mines;;;;;;;;;;;;;
+mex_shitty_minery_ten;Mildly War-Thorned Mines;;;;;;;;;;;;;
+fix_mining_mex_title;Invest into the Mining Sector;;;;;;;;;;;;;
+fix_mining_mex_desc;After the Independence of Mexico, most of our most important and profitable mines were damaged and flooded, this has left us with no way near as much money as New Spain used to make. To fix this, we must invest in the mining sector, and the reparation of the mines! But making money requires, of course, money.;;;;;;;;;;;;;
