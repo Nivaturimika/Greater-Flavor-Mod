@@ -1,6 +1,5 @@
 capital = 2589
-primary_culture = samurai
-culture = japanese
+primary_culture = japanese
 religion = mahayana
 government = absolute_monarchy
 plurality = 0.0

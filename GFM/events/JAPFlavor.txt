@@ -254,10 +254,7 @@ country_event = {
         }
         any_country = {
             limit = {
-				OR = {
-					primary_culture = japanese
-					primary_culture = samurai
-				}
+                primary_culture = japanese
                 substate_of = THIS
             }
             remove_country_modifier = uncivilized_isolationism
@@ -268,10 +265,7 @@ country_event = {
         }
         any_country = {
             limit = {
-				OR = {
-					primary_culture = japanese
-					primary_culture = samurai
-				}
+                primary_culture = japanese
                 substate_of = THIS
                 civilized = no
             }
@@ -375,10 +369,7 @@ country_event = {
 		}
 		any_country = {
 			limit = {
-				OR = {	
-					primary_culture = japanese
-					primary_culture = samurai
-				}
+				primary_culture = japanese
 				NOT = { tag = RYU }
 			}
 			country_event = 899090
@@ -447,10 +438,7 @@ country_event = {
 		TKG = { country_event = 899092 }
 		any_country = {
 			limit = {
-				OR = {
-					primary_culture = japanese
-					primary_culture = samurai
-				}
+				primary_culture = japanese
 				NOT = { tag = RYU }
 				NOT = { tag = TKG }
 			}
@@ -614,10 +602,7 @@ country_event = {
         }
         any_country = {
             limit = {
-				OR = {
-					primary_culture = japanese
-					primary_culture = samurai
-				}
+                primary_culture = japanese
                 substate_of = THIS
             }
             remove_country_modifier = uncivilized_isolationism
@@ -628,10 +613,7 @@ country_event = {
         }
         any_country = {
             limit = {
-				OR = {
-					primary_culture = japanese
-					primary_culture = samurai
-				}
+                primary_culture = japanese
                 substate_of = THIS
                 civilized = no
             }
@@ -1762,10 +1744,7 @@ country_event = {
     picture = "sonno_joi"
 
     trigger = {
-		OR = {
-			primary_culture = japanese
-			primary_culture = samurai
-		}
+        primary_culture = japanese
         OR = {
             tag = TKG
             substate_of = TKG
@@ -1814,14 +1793,7 @@ province_event = {
             has_country_flag = sonno_joi
             war = no
         }
-        owner = { 
-			any_neighbor_country = {
-				OR = {
-					primary_culture = japanese 
-					primary_culture = samurai
-				}
-			}
-		}
+        owner = { any_neighbor_country = { primary_culture = japanese } }
         TKG = { exists = yes }
         is_core = TKG
         controlled_by = THIS
@@ -2425,23 +2397,13 @@ country_event = {
             has_country_modifier = recently_lost_war
             any_core = {
                 empty = no
-                owner = { 
-					NOT = {
-						OR = {
-							is_culture_group = far_east_asian 
-							is_culture_group = old_japanese 
-						}
-					}
-				}
+                owner = { NOT = { is_culture_group = far_east_asian } }
             }
             any_core = {
                 empty = no
                 NOT = { owned_by = THIS }
                 owner = {
-					OR = {
-						is_culture_group = far_east_asian
-						is_culture_group = old_japanese
-					}
+                    is_culture_group = far_east_asian
                     is_vassal = no
                 }
             }
@@ -2549,10 +2511,7 @@ country_event = {
 
 
 	trigger = {
-		OR = {
-			primary_culture = japanese
-			primary_culture = samurai
-		}
+		primary_culture = japanese
 		TKG = { civilized = yes }
 		average_consciousness = 1.5
 		average_militancy = 1.5
@@ -2828,10 +2787,7 @@ country_event = {
                     OR = {
                         substate_of = TKG
                         AND = {
-							OR = {
-								primary_culture = japanese
-								primary_culture = samurai
-							}
+                            primary_culture = japanese
                             vassal_of = TKG
                         }
                     }
@@ -6378,23 +6334,4 @@ country_event = {
 		}
 	}
 	mean_time_to_happen = { months = 7 }
-}
-
-#Old Japanese cleanup
-country_event = {
-	id = 18583001
-	title = "Westernized Military Dress"
-	desc = "JAPAN_NEWMILITARYDRESS"
-	picture = "westernized_samurai"
-	fire_only_once = yes
-	
-	trigger = {
-		primary_culture = samurai
-		civilized = yes
-	}
-	option = {
-		name = "In our own way, we must adapt to the customs of the modern world."
-		primary_culture = japanese
-	}
-	mean_time_to_happen = { months = 1 }
 }
