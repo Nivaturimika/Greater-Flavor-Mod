@@ -569,7 +569,10 @@ political_decisions = {
             any_pop = { militancy = -3 }
             any_country = {
                 limit = {
-                    primary_culture = japanese
+                    OR = {
+						primary_culture = japanese
+						primary_culture = samurai
+					}
                     OR = {
                         substate_of = TKG
                         vassal_of = TKG
@@ -588,7 +591,10 @@ political_decisions = {
     overthrow_the_bakufu = {
         picture = the_meiji_restoration
         potential = {
-            primary_culture = japanese
+            OR = {
+				primary_culture = japanese
+				primary_culture = samurai
+			}
             OR = {
                 government = hms_government
                 government = prussian_constitutionalism
@@ -676,7 +682,10 @@ political_decisions = {
             }
             any_country = {
                 limit = {
-                    primary_culture = japanese
+                    OR = {
+						primary_culture = japanese
+						primary_culture = samurai
+					}
                     OR = {
                         substate_of = TKG
                         vassal_of = TKG
@@ -1254,7 +1263,10 @@ political_decisions = {
             TKG = { country_event = 97617 }
             any_country = {
                 limit = {
-                    primary_culture = japanese
+					OR = {
+						primary_culture = japanese
+						primary_culture = samurai
+					}
                     OR = {
                         substate_of = TKG
                         vassal_of = TKG
@@ -1949,7 +1961,10 @@ political_decisions = {
     occupy_kita_ezo = {
         picture = map_yellow_sea
         potential = {
-            primary_culture = japanese
+            OR = {
+				primary_culture = japanese
+				primary_culture = samurai
+			}
             1643 = { empty = yes }
             1644 = { empty = yes }
             owns = 1642
@@ -2030,7 +2045,10 @@ political_decisions = {
                 tag = JAP
                 tag = TKG
                 AND = {
-                    primary_culture = japanese
+					OR = {
+						primary_culture = japanese
+						primary_culture = samurai
+					}
                     has_country_flag = mahayana_country
                 }
             }

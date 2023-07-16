@@ -1,6 +1,5 @@
 capital = 1642
 primary_culture = japanese
-culture = ainu
 religion = shinto
 government = democracy
 plurality = 10
