@@ -150,7 +150,8 @@ From;To;Type;Through;Data;Comment
 1447;1434;sea;2854;0;Ternate Strait
 1437;1436;sea;2810;0;Bulon-Kendari Strait
 1435;1425;sea;2812;0;Palu-Tarakan Strait
-1644;1089;sea;2839;0;Nemuru-Etorofu Strait
+1644;3689;sea;2839;0;Nemuru-Kunashir Strait
+3689;1089;sea;2839;0;Kunashir-Etorofu Strait
 1089;1088;sea;2839;0;Etorofu-Shumshu Strait
 1088;1074;sea;2839;0;Shumshu-Petropavlovsk Strait
 1679;1678;sea;3581;0;Amari-Okinawa Strait
