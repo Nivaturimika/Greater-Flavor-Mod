@@ -819,6 +819,33 @@ political_decisions = {
         }
         ai_will_do = { factor = 1 }
     }
+	
+	claim_the_northwest = {
+        picture = banatia_map
+        potential = {
+            tag = BAN
+            640 = { NOT = { is_core = BAN } }
+            exists = yes
+        }
+
+        allow = {
+            war = no
+            is_vassal = no
+            prestige = 100
+            OR = {
+                war_policy = jingoism
+                war_policy = pro_military
+            }
+			owns = 779
+        }
+
+        effect = {
+            badboy = 4
+            640 = { add_core = BAN }
+            3672 = { add_core = BAN }
+        }
+        ai_will_do = { factor = 1 }
+    }
 
     claim_transnitria = {
         picture = transnistria_stamp

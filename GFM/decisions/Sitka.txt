@@ -1903,7 +1903,6 @@ political_decisions = {
         potential = {
             tag = BAN
             NOT = { has_country_flag = Eastern_Banatia_claimed }
-			ai = no
         }
         allow = {
             war = no
@@ -1920,9 +1919,6 @@ political_decisions = {
             656 = {
             add_core = BAN
             }
-            665 = {
-            add_core = BAN
-            }
             647 = {
             add_core = BAN
             }
@@ -1932,13 +1928,53 @@ political_decisions = {
             659 = {
             add_core = BAN
             }
-            667 = {
-            add_core = BAN
-            }
             655 = {
             add_core = BAN
             }
+			
             add_accepted_culture = north_german
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+	nord_siebenburgen = {
+		picture = banatia_map
+        potential = {
+            tag = BAN
+			has_country_flag = Eastern_Banatia_claimed
+            NOT = { has_country_flag = nord_siebenburgen_claimed }
+        }
+        allow = {
+            war = no
+            prestige = 120
+            is_vassal = no
+            owns = 655
+            owns = 647
+            owns = 657
+        }
+        effect = {
+            badboy = 15
+            prestige = 15
+            set_country_flag = nord_siebenburgen_claimed
+			654 = {
+			add_core = BAN
+			}
+			651 = {
+			add_core = BAN
+			}
+			3422 = {
+			add_core = BAN
+			}
+			661 = {
+			add_core = BAN
+			}
+			2533 = {
+			add_core = BAN
+			}
+			660 = {
+			add_core = BAN
+			}
         }
         ai_will_do = {
             factor = 1
