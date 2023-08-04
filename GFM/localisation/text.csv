@@ -11271,7 +11271,7 @@ PW_NATIONAL_FOCUS;National Focus: ;Cause nationale : ;Nationaler Fokus:;;Atenció
 PW_NO_NATIONAL_FOCUS;No National Focus set;Aucune cause nationale définie;Kein nationaler Fokus eingestellt;;Sin atención nacional establecida;;;;;;;;;
 PW_COLONY;Colonial Province;Province coloniale;Kolonialprovinz;;Provincia colonial;;;;;;;;;
 PW_COLONY_STATE;Click to convert to state. This requires §Y$VALUE$§! free colonial power points.;Cliquez pour convertir en État.;Klicken Sie, um zum Staat zu konvertieren.;;Haz clic para convertir en estado.;;;;;;;;;
-PROVINCEVIEW_TERRAIN;Terrain: §Y$TERRAIN$§W;Terrain : §Y$TERRAIN$§W;Gelände: §Y$TERRAIN$§W;;Terreno: §Y$TERRAIN$§W;;;;;;;;;
+PROVINCEVIEW_TERRAIN;§Y$TERRAIN$§W;§Y$TERRAIN$§W;Gelände: §Y$TERRAIN$§W;;Terreno: §Y$TERRAIN$§W;;;;;;;;;
 PROVINCEVIEW_CURRENT_SHIPS;Current ships: §Y$CURRENT$§W;Navires actuels : §Y$CURRENT$§W;Momentane Schiffe: §Y$CURRENT$§W;;Barcos actuales: §Y$CURRENT$§W;;;;;;;;;
 PROVINCEVIEW_CURRENT_ARMY;Current brigades: §Y$CURRENT$§W\nAllowed brigades: §Y$ALLOWED$§W;Régiments actuels : §Y$CURRENT$§W\nRégiments autorisés : §Y$ALLOWED$§W;Momentane Regimenter: §Y$CURRENT$§W\nZugelassene Regimenter: §Y$ALLOWED$§W;;Brigadas actuales: §Y$CURRENT$§W\nBrigadas permitidas: §Y$ALLOWED$§W;;;;;;;;;
 PV_UNCOLONIZED;Uncolonized;Non colonisé;Unkolonisiert;;Sin colonizar;;;;;;;;;
