@@ -1,5 +1,5 @@
 #
-# V2ME Cleanup 1.0.3b by Bob Bobington and Dr, configured for GFM
+# V2ME Cleanup RAM Version by Bob Bobington and Dr, configured for GFM
 #
 # Features:
 #
@@ -19,12 +19,9 @@
 #	-Prevents existing countries from having non-existing overlords
 #	-Prevents existing countries from having non-existing vassals (disabled by default, this is intended in some mods)
 #
-# Upcoming features (TBA):
-#	-Permanent fix to craftsmen exploit/bug, without player interaction
-#	-Dynamically adressing the liquidity crisis, effectively
 #
 # Most Recent Version Change:
-#	-1.0.3b: GFM Version Only, Added Indochina Organization
+#	-RAM Version: Off-Map Cleanup Tag
 #
 
 
@@ -325,6 +322,28 @@ country_event = {
                 15 = { overlord = { country_event = { id = 70005 days = 5 } } }
             }
 		}
+		CLN = { change_variable = { which = days_till_monthly_cleanup value = -1 } }
+		random_country = {
+			limit = { 
+				NOT = {
+					CLN = { check_variable = { which = days_till_monthly_cleanup value = 0 } }
+				}
+			}
+			CLN = {	set_variable = { which = days_till_monthly_cleanup value = 31 } }
+			CLN = {	change_variable = { which = months_till_yearly_cleanup value = -1 } }
+			CLN = { country_event = 477877790 }
+		}
+		random_country = {
+			limit = { 
+				NOT = {
+					CLN = { check_variable = { which = months_till_yearly_cleanup value = 0 } }
+				}
+			}
+			CLN = {	set_variable = { which = months_till_yearly_cleanup value = 12 } }
+			CLN = { country_event = 477877791 }
+		}
+		
+		clr_global_flag = daily_cleanup_on
 		CLN = { country_event = { id = 477877787 days = 1 } }
 	}
 }
