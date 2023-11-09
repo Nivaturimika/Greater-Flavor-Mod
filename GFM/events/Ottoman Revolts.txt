@@ -54,6 +54,7 @@ country_event = {
 			attacker_goal = { casus_belli = conquest }
 			defender_goal = { casus_belli = acquire_core_state state_province_id = 810 }
 		}
+		ai_chance = { factor = 1 }
     }
     option = {
         name = "Bulgaria shall be free! §BPlay as the revolt§W"
@@ -93,6 +94,7 @@ country_event = {
 			defender_goal = { casus_belli = acquire_core_state state_province_id = 810 }
 		}
         change_tag_no_core_switch = BUL
+		ai_chance = { factor = 0 }
     }
 }
 country_event = {
@@ -137,6 +139,7 @@ country_event = {
 			defender_goal = { casus_belli = acquire_state state_province_id = 788 }
 		}
 		SRR = { define_general = { name = "Ali Pasha II Fidahic" personality = defence_2.1 background = no_background } }
+		ai_chance = { factor = 1 }
     }
     option = {
         name = "Bosnia shall be free! §BPlay as the revolt§W"
@@ -164,6 +167,7 @@ country_event = {
 		}
 		SRR = { define_general = { name = "Ali Pasha II Fidahic" personality = defence_2.1 background = no_background } }
         change_tag_no_core_switch = SRR
+		ai_chance = { factor = 0 }
     }
 }
 country_event = {
@@ -172,7 +176,7 @@ country_event = {
     desc = "ALBANIANREVOLTVLORA"
     picture = "ALB_revolt_1"
     fire_only_once = yes
-    mean_time_to_happen = { months = 6 }
+    mean_time_to_happen = { days = 1 }
 	trigger = {
 		is_vassal = no
 		NOT = { has_country_flag = enacted_ottomanism }
@@ -180,8 +184,11 @@ country_event = {
         tag = TUR
         owns = 852
         year = 1836
-        NOT = { year = 1839 }
-        NOT = { exists = ALB }
+		month = 6
+        NOT = {
+			exists = ALB
+			year = 1839
+		}
     }
     option = {
         name = "Crush them!"
@@ -199,7 +206,6 @@ country_event = {
 			secede_province = ALB
 		}
 		ALB = {
-			government = prussian_constitutionalism political_reform = landed_voting political_reform = harassment
 			define_general = { name = "Tafil Buzi" personality = defence_1.1 background = attack_2.1 }
 		}
 		war = {
@@ -207,6 +213,7 @@ country_event = {
 			attacker_goal = { casus_belli = civil_war }
 			defender_goal = { casus_belli = acquire_core_state state_province_id = 853 }
 		}
+		ai_chance = { factor = 1 }
     }
     option = {
         name = "Albania shall be free! §BPlay as the revolt§W"
@@ -224,7 +231,6 @@ country_event = {
 			secede_province = ALB
 		}
 		ALB = {
-			government = prussian_constitutionalism political_reform = landed_voting political_reform = harassment
 			define_general = { name = "Tafil Buzi" personality = defence_1.1 background = attack_2.1 }
 		}
 		war = {
@@ -233,10 +239,10 @@ country_event = {
 			defender_goal = { casus_belli = acquire_core_state state_province_id = 853 }
 		}
         change_tag_no_core_switch = ALB
+		ai_chance = { factor = 0 }
     }
 	option = {
         name = "Grant them autonomy to avoid bloodshed."
-		ALB = { government = prussian_constitutionalism political_reform = landed_voting political_reform = harassment }
         any_owned = {
 			limit = {
 				is_core = ALB
@@ -273,7 +279,7 @@ country_event = {
     desc = "NORTHALBREVOLT"
     fire_only_once = yes
     picture = "ALB_revolt_2"
-    mean_time_to_happen = { months = 5 }
+    mean_time_to_happen = { days = 1 }
     trigger = {
 		is_vassal = no
 		NOT = { has_country_flag = enacted_ottomanism }
@@ -288,8 +294,10 @@ country_event = {
         owns = 803
         owns = 849
         year = 1837
-        NOT = { year = 1840 }
-        NOT = { exists = ALB }
+        NOT = {
+			exists = ALB
+			year = 1838
+		}
     }
     option = {
         name = "Crush them!"
@@ -329,7 +337,6 @@ country_event = {
             secede_province = ALB
         }
 		ALB = {
-			government = prussian_constitutionalism political_reform = landed_voting political_reform = harassment
 			define_general = { name = "Alush bey Frakulla" personality = no_personality background = attack_2.1 }
 			war = {
 				target = TUR
@@ -337,6 +344,7 @@ country_event = {
 				defender_goal = { casus_belli = conquest_any }
 			}
 		}
+		ai_chance = { factor = 1 }
     }
     option = {
         name = "Albania shall be free! §BPlay as the revolt§W"
@@ -376,7 +384,6 @@ country_event = {
             secede_province = ALB
         }
 		ALB = {
-			government = prussian_constitutionalism political_reform = landed_voting political_reform = harassment
 			define_general = { name = "Alush bey Frakulla" personality = no_personality background = attack_2.1 }
 			war = {
 				target = TUR
@@ -385,6 +392,7 @@ country_event = {
 			}
 		}
         change_tag_no_core_switch = ALB
+		ai_chance = { factor = 0 }
     }
 	option = {
         name = "Grant them autonomy to avoid bloodshed."
@@ -437,13 +445,14 @@ country_event = {
         owns = 803
 		war_with = EGY
         year = 1839
-        NOT = { year = 1842 }
-        NOT = { exists = ALB }
 		month = 8
+        NOT = {
+			exists = ALB
+			year = 1840
+		}
     }
     option = {
         name = "Crush them!"
-		ALB = { government = prussian_constitutionalism political_reform = landed_voting political_reform = harassment }
 		ALB = {
 			war = {
 				target = SER
@@ -469,10 +478,10 @@ country_event = {
             attacker_goal = { casus_belli = conquest_any }
             defender_goal = { casus_belli = acquire_core_state state_province_id = 853 }
         }
+		ai_chance = { factor = 1 }
     }
     option = {
         name = "Albania shall be free! §BPlay as the revolt§W"
-		ALB = { government = prussian_constitutionalism political_reform = landed_voting political_reform = harassment }
 		ALB = {
 			war = {
 				target = SER
@@ -499,9 +508,7 @@ country_event = {
             defender_goal = { casus_belli = acquire_core_state state_province_id = 853 }
         }
         change_tag_no_core_switch = ALB
-		ai_chance = {
-			factor = 0
-		}
+		ai_chance = { factor = 0 }
     }
 	option = {
         name = "Grant them autonomy to avoid bloodshed."
@@ -541,7 +548,7 @@ country_event = {
     desc = "DERVISHCARAREVOLTS"
     fire_only_once = yes
     picture = "ALB_revolt_8"
-    mean_time_to_happen = { months = 5 }
+    mean_time_to_happen = { days = 1 }
     trigger = {
 		is_vassal = no
 		NOT = { has_country_flag = enacted_ottomanism }
@@ -553,12 +560,14 @@ country_event = {
         owns = 1780
         owns = 849
         year = 1843
-        NOT = { year = 1846 }
-        NOT = { exists = ALB }
+		month = 7
+        NOT = {
+			year = 1844
+			exists = ALB
+		}
     }
     option = {
         name = "Crush them!"
-		ALB = { government = prussian_constitutionalism political_reform = landed_voting political_reform = harassment }
 		ALB = {
 			war = {
 				target = SER
@@ -593,10 +602,10 @@ country_event = {
         }
 		ALB = { define_general = { name = "Dervish Cara" personality = defence_3.1 background = no_background } }
 		TUR = { define_general = { name = "Bib Dodë" personality = no_personality background = attack_1.1 } }
+		ai_chance = { factor = 1 }
     }
     option = {
         name = "Albania shall be free! §BPlay as the revolt§W"
-		ALB = { government = prussian_constitutionalism political_reform = landed_voting political_reform = harassment }
 		ALB = {
 			war = {
 				target = SER
@@ -632,6 +641,7 @@ country_event = {
         change_tag_no_core_switch = ALB
 		ALB = { define_general = { name = "Dervish Cara" personality = defence_3.1 background = no_background } }
 		TUR = { define_general = { name = "Bib Dodë" personality = no_personality background = attack_1.1 } }
+		ai_chance = { factor = 0 }
     }
     option = {
         name = "Grant them their demands."
@@ -643,7 +653,6 @@ country_event = {
             militancy = -10
         }
 		release_vassal = ALB
-		ALB = { government = prussian_constitutionalism political_reform = landed_voting political_reform = harassment }
 		relation = { who = ALB value = 400 }
 		diplomatic_influence = { who = ALB value = 400 }
 		ALB = { define_general = { name = "Dervish Cara" personality = defence_3.1 background = no_background } }
@@ -652,11 +661,11 @@ country_event = {
 }
 country_event = {
     id = 123471
-    title = "Albanian revolts of $YEAR$" #1845
-    desc = "The Albanians are revolting against our rule."
+    title = "The Revolt of 1845" #1845
+    desc = "REVOLT1845"
     fire_only_once = yes
     picture = "ALB_revolt_4"
-    mean_time_to_happen = { months = 5 }
+    mean_time_to_happen = { days = 1 }
     trigger = {
 		is_vassal = no
 		NOT = { has_country_flag = enacted_ottomanism }
@@ -667,12 +676,14 @@ country_event = {
         owns = 1780
         owns = 849
         year = 1845
-        NOT = { year = 1848 }
-        NOT = { exists = ALB }
+		month = 5
+        NOT = {
+			exists = ALB
+			year = 1846
+		}
     }
     option = {
         name = "Crush them!"
-		ALB = { government = prussian_constitutionalism political_reform = landed_voting political_reform = harassment }
 		ALB = {
 			war = {
 				target = SER
@@ -701,10 +712,11 @@ country_event = {
             attacker_goal = { casus_belli = conquest_any }
             defender_goal = { casus_belli = acquire_core_state state_province_id = 853 }
         }
+		ALB = { define_general = { name = "Binak Alia" personality = defence_1.1 background = attack_1.1 } }
+		ai_chance = { factor = 1 }
     }
     option = {
         name = "Albania shall be free! §BPlay as the revolt§W"
-		ALB = { government = prussian_constitutionalism political_reform = landed_voting political_reform = harassment }
 		ALB = {
 			war = {
 				target = SER
@@ -733,7 +745,9 @@ country_event = {
             attacker_goal = { casus_belli = conquest_any }
             defender_goal = { casus_belli = acquire_core_state state_province_id = 853 }
         }
+		ALB = { define_general = { name = "Binak Alia" personality = defence_1.1 background = attack_1.1 } }
         change_tag_no_core_switch = ALB
+		ai_chance = { factor = 0 }
     }
 }
 country_event = {
@@ -742,7 +756,7 @@ country_event = {
     desc = "ALBREVOLTEIGHTEENFOURTYSEVEN"
     fire_only_once = yes
     picture = "ALB_revolt_6"
-    mean_time_to_happen = { months = 5 }
+    mean_time_to_happen = { days = 1 }
     trigger = {
 		is_vassal = no
 		NOT = { has_country_flag = enacted_ottomanism }
@@ -754,12 +768,12 @@ country_event = {
         owns = 849
         owns = 3307
         year = 1847
-        NOT = { year = 1850 }
+		month = 7
+        NOT = { year = 1848 }
         NOT = { exists = ALB }
     }
     option = {
         name = "Crush them!"
-		ALB = { government = prussian_constitutionalism political_reform = landed_voting political_reform = harassment }
         any_pop = {
             limit = {
                 has_pop_culture = albanian
@@ -785,10 +799,10 @@ country_event = {
             defender_goal = { casus_belli = acquire_core_state state_province_id = 853 }
         }
 		ALB = { define_general = { name = "Çelo Picari" personality = defence_3.1 background = attack_1.1 } }
+		ai_chance = { factor = 1 }
     }
     option = {
         name = "Albania shall be free! §BPlay as the revolt§W"
-		ALB = { government = prussian_constitutionalism political_reform = landed_voting political_reform = harassment }
         any_pop = {
             limit = {
                 has_pop_culture = albanian
@@ -815,6 +829,7 @@ country_event = {
         }
 		ALB = { define_general = { name = "Çelo Picari" personality = defence_3.1 background = attack_1.1 } }
         change_tag_no_core_switch = ALB
+		ai_chance = { factor = 0 }
     }
 }
 country_event = {
@@ -855,6 +870,7 @@ country_event = {
         }
 		country_event = { id = 1234651 days = 60 }
 		BOS = { define_general = { name = "Luka Vukalovic" personality = defence_3.1 background = no_background } }
+		ai_chance = { factor = 1 }
     }
     option = {
         name = "Bosnia shall be free! §BPlay as the revolt§W"
@@ -888,11 +904,12 @@ country_event = {
 		country_event = { id = 1234651 days = 60 }
 		BOS = { define_general = { name = "Luka Vukalovic" personality = defence_3.1 background = no_background } }
         change_tag_no_core_switch = BOS
+		ai_chance = { factor = 0 }
     }
 }
 country_event = {
     id = 1234651
-    title = "Montenegro's betrayal"
+    title = "Montenegro's Betrayal"
     desc = "Montenegro, our nominal vassal has become entirely independent in all but name. We have now discovered that they instigated the recent revolt in Herzegovina. How should we react?"
     fire_only_once = yes
     picture = "grahovobattle"
@@ -947,6 +964,7 @@ country_event = {
 			824 = { owned_by = GRE }
 		}
 		exists = GRE
+		GRE = { is_vassal = no }
 		OR = {
 			war_with = RUS
 			truce_with = RUS
@@ -999,6 +1017,7 @@ country_event = {
         }
 		MCD = { define_general = { name = "Theodoros Ziakas" personality = defence_1.1 background = attack_2.1 } }
 		MCD = { define_general = { name = "Dimitrios Karatasos" personality = defence_2.1 background = attack_1.1 } }
+		ai_chance = { factor = 1 }
     }
     option = {
         name = "Macedonia shall be free! §BPlay as the revolt§W"
@@ -1034,6 +1053,7 @@ country_event = {
 		MCD = { define_general = { name = "Theodoros Ziakas" personality = defence_1.1 background = attack_2.1 } }
 		MCD = { define_general = { name = "Dimitrios Karatasos" personality = defence_2.1 background = attack_1.1 } }
         change_tag_no_core_switch = MCD
+		ai_chance = { factor = 0 }
     }
 }
 country_event = {
@@ -1161,6 +1181,7 @@ country_event = {
             attacker_goal = { casus_belli = conquest_low }
             defender_goal = { casus_belli = acquire_core_state state_province_id = 810 }
         }
+		ai_chance = { factor = 1 }
     }
     option = {
         name = "Bulgaria shall be free! §BPlay as the revolt§W"
@@ -1208,6 +1229,7 @@ country_event = {
             defender_goal = { casus_belli = acquire_core_state state_province_id = 810 }
         }
         change_tag_no_core_switch = BUL
+		ai_chance = { factor = 0 }
     }
 }
 country_event = {
@@ -1248,6 +1270,7 @@ country_event = {
             attacker_goal = { casus_belli = conquest_tiny }
             defender_goal = { casus_belli = acquire_core_state state_province_id = 810 }
         }
+		ai_chance = { factor = 1 }
     }
     option = {
         name = "Bulgaria shall be free! §BPlay as the revolt§W"
@@ -1272,6 +1295,7 @@ country_event = {
             defender_goal = { casus_belli = acquire_core_state state_province_id = 810 }
         }
         change_tag_no_core_switch = BUL
+		ai_chance = { factor = 0 }
     }
 }
 country_event = {
@@ -1322,6 +1346,7 @@ country_event = {
             defender_goal = { casus_belli = acquire_core_state state_province_id = 806 }
         }
 		SRR = { define_general = { name = "Ilija Delija" personality = defence_1.1 background = attack_1.1 } }
+		ai_chance = { factor = 1 }
     }
     option = {
         name = "Serbia shall be free! §BPlay as the revolt§W"
@@ -1355,6 +1380,7 @@ country_event = {
         }
 		SRR = { define_general = { name = "Ilija Delija" personality = defence_1.1 background = attack_1.1 } }
         change_tag_no_core_switch = SRR
+		ai_chance = { factor = 0 }
     }
 
 }
@@ -1397,6 +1423,7 @@ country_event = {
             attacker_goal = { casus_belli = conquest }
             defender_goal = { casus_belli = acquire_core_state state_province_id = 887 }
         }
+		ai_chance = { factor = 1 }
     }
     option = {
         name = "Armenia shall be free! §BPlay as the revolt§W"
@@ -1421,6 +1448,7 @@ country_event = {
             defender_goal = { casus_belli = acquire_core_state state_province_id = 887 }
         }
         change_tag_no_core_switch = ARM
+		ai_chance = { factor = 0 }
     }
 }
 country_event = {
@@ -1552,6 +1580,7 @@ country_event = {
             defender_goal = { casus_belli = status_quo }
         }
 		SRR = { define_general = { name = "Veljan Cvetkovic" personality = defence_2.1 background = attack_1.1 } }
+		ai_chance = { factor = 1 }
     }
     option = {
         name = "Serbia shall be free! §BPlay as the revolt§W"
@@ -1583,6 +1612,7 @@ country_event = {
         }
         change_tag_no_core_switch = SRR
 		SRR = { define_general = { name = "Veljan Cvetkovic" personality = defence_2.1 background = attack_1.1 } }
+		ai_chance = { factor = 0 }
     }
 
 }
@@ -1607,6 +1637,7 @@ country_event = {
         NOT = { year = 1881 }
         NOT = { exists = GRR }
 		exists = GRE
+		GRE = { is_vassal = no }
 		837 = { owned_by = GRE }
 		OR = {
 			war_with = RUS
@@ -1648,6 +1679,7 @@ country_event = {
             attacker_goal = { casus_belli = conquest }
             defender_goal = { casus_belli = status_quo }
         }
+		ai_chance = { factor = 1 }
     }
     option = {
         name = "Greece shall be free! §BPlay as the revolt§W"
@@ -1685,6 +1717,7 @@ country_event = {
             defender_goal = { casus_belli = status_quo }
         }
         change_tag_no_core_switch = GRR
+		ai_chance = { factor = 0 }
     }
 }
 country_event = {
@@ -1703,6 +1736,7 @@ country_event = {
         NOT = { year = 1870 }
         NOT = { exists = GRR }
 		exists = GRE
+		GRE = { is_vassal = no }
 		is_greater_power = no
     }
     option = {
@@ -1734,6 +1768,7 @@ country_event = {
             attacker_goal = { casus_belli = conquest_any }
             defender_goal = { casus_belli = status_quo }
         }
+		ai_chance = { factor = 1 }
     }
     option = {
         name = "Greece shall be free! §BPlay as the revolt§W"
@@ -1765,6 +1800,7 @@ country_event = {
             defender_goal = { casus_belli = status_quo }
         }
         change_tag_no_core_switch = GRR
+		ai_chance = { factor = 0 }
     }
 }
 country_event = {
@@ -1793,6 +1829,7 @@ country_event = {
         NOT = { year = 1857 }
         NOT = { exists = GRR }
 		exists = GRE
+		GRE = { is_vassal = no }
     }
     option = {
         name = "Crush them!"
@@ -1822,6 +1859,7 @@ country_event = {
         }
 		GRR = { define_general = { name = "Theodoros Grivas" personality = defence_1.2 background = attack_1.7 } }
 		GRR = { define_general = { name = "Kitsos Tzavelas" personality = no_personality background = attack_2.1 } }
+		ai_chance = { factor = 1 }
     }
     option = {
         name = "Greece shall be free! §BPlay as the revolt§W"
@@ -1852,6 +1890,7 @@ country_event = {
 		GRR = { define_general = { name = "Theodoros Grivas" personality = defence_1.2 background = attack_1.7 } }
 		GRR = { define_general = { name = "Kitsos Tzavelas" personality = no_personality background = attack_2.1 } }
         change_tag_no_core_switch = GRR
+		ai_chance = { factor = 0 }
     }
 
 }
@@ -1871,6 +1910,9 @@ country_event = {
         owns = 798
 		owns = 799
 		owns = 3346
+		owns = 3291
+		owns = 3290
+		owns = 3421
         year = 1841
         NOT = { year = 1844 }
         NOT = { exists = SRR }
@@ -1901,12 +1943,22 @@ country_event = {
         3346 = {
             secede_province = SRR
         }
+		3291 = {
+            secede_province = SRR
+        }
+		3290 = {
+            secede_province = SRR
+        }
+		3421 = {
+            secede_province = SRR
+        }
 		casus_belli = { target = SRR type = conquest months = 12 }
         war = {
             target = SRR
             attacker_goal = { casus_belli = conquest }
             defender_goal = { casus_belli = status_quo }
         }
+		ai_chance = { factor = 1 }
     }
     option = {
         name = "Serbia shall be free! §BPlay as the revolt§W"
@@ -1934,6 +1986,15 @@ country_event = {
         3346 = {
             secede_province = SRR
         }
+		3291 = {
+            secede_province = SRR
+        }
+		3290 = {
+            secede_province = SRR
+        }
+		3421 = {
+            secede_province = SRR
+        }
 		casus_belli = { target = SRR type = conquest months = 12 }
         war = {
             target = SRR
@@ -1941,6 +2002,7 @@ country_event = {
             defender_goal = { casus_belli = status_quo }
         }
         change_tag_no_core_switch = SRR
+		ai_chance = { factor = 0 }
     }
 }
 country_event = {
@@ -1991,6 +2053,7 @@ country_event = {
             attacker_goal = { casus_belli = civil_war }
             defender_goal = { casus_belli = status_quo }
         }
+		ai_chance = { factor = 1 }
     }
     option = {
         name = "Serbia shall be free! §BPlay as the revolt§W"
@@ -2022,6 +2085,7 @@ country_event = {
             defender_goal = { casus_belli = status_quo }
         }
         change_tag_no_core_switch = SRR
+		ai_chance = { factor = 0 }
     }
 }
 country_event = {
@@ -2089,6 +2153,7 @@ country_event = {
 				defender_goal = { casus_belli = conquest_any }
 			}
 		}
+		ai_chance = { factor = 1 }
     }
     option = {
         name = "Serbia shall be free! §BPlay as the revolt§W"
@@ -2134,6 +2199,7 @@ country_event = {
 			}
 		}
         change_tag_no_core_switch = SRR
+		ai_chance = { factor = 0 }
     }
 
 }
@@ -2161,7 +2227,6 @@ country_event = {
     }
     option = {
         name = "Crush them!"
-		ALB = { government = prussian_constitutionalism political_reform = landed_voting political_reform = harassment }
 		ALB = {
 			war = {
 				target = SER
@@ -2197,10 +2262,10 @@ country_event = {
             attacker_goal = { casus_belli = conquest_low }
             defender_goal = { casus_belli = acquire_core_state state_province_id = 887 }
         }
+		ai_chance = { factor = 1 }
     }
     option = {
         name = "Albania shall be free! §BPlay as the revolt§W"
-		ALB = { government = prussian_constitutionalism political_reform = landed_voting political_reform = harassment }
 		ALB = {
 			war = {
 				target = SER
@@ -2237,6 +2302,7 @@ country_event = {
             defender_goal = { casus_belli = acquire_core_state state_province_id = 887 }
         }
         change_tag_no_core_switch = ALB
+		ai_chance = { factor = 0 }
     }
 }
 country_event = {
@@ -2264,7 +2330,6 @@ country_event = {
     }
     option = {
         name = "Crush them!"
-		ALB = { government = prussian_constitutionalism political_reform = landed_voting political_reform = harassment }
 		ALB = {
 			war = {
 				target = SER
@@ -2302,10 +2367,10 @@ country_event = {
             attacker_goal = { casus_belli = conquest_any }
             defender_goal = { casus_belli = acquire_core_state state_province_id = 853 }
         }
+		ai_chance = { factor = 1 }
     }
     option = {
         name = "Albania shall be free! §BPlay as the revolt§W"
-		ALB = { government = prussian_constitutionalism political_reform = landed_voting political_reform = harassment }
 		ALB = {
 			war = {
 				target = SER
@@ -2344,6 +2409,7 @@ country_event = {
             defender_goal = { casus_belli = acquire_core_state state_province_id = 853 }
         }
         change_tag_no_core_switch = ALB
+		ai_chance = { factor = 0 }
     }
 }
 country_event = {
@@ -2367,7 +2433,6 @@ country_event = {
     }
     option = {
         name = "Crush them!"
-		ALB = { government = prussian_constitutionalism political_reform = landed_voting political_reform = harassment }
 		ALB = {
 			war = {
 				target = SER
@@ -2393,10 +2458,10 @@ country_event = {
             attacker_goal = { casus_belli = conquest_any }
             defender_goal = { casus_belli = acquire_core_state state_province_id = 853 }
         }
+		ai_chance = { factor = 1 }
     }
     option = {
         name = "Albania shall be free! §BPlay as the revolt§W"
-		ALB = { government = prussian_constitutionalism political_reform = landed_voting political_reform = harassment }
 		ALB = {
 			war = {
 				target = SER
@@ -2423,6 +2488,7 @@ country_event = {
             defender_goal = { casus_belli = acquire_core_state state_province_id = 853 }
         }
         change_tag_no_core_switch = ALB
+		ai_chance = { factor = 0 }
     }
 }
 country_event = {
@@ -2444,7 +2510,6 @@ country_event = {
     }
     option = {
         name = "Crush them!"
-		ALB = { government = prussian_constitutionalism political_reform = landed_voting political_reform = harassment }
 		ALB = {
 			war = {
 				target = SER
@@ -2481,10 +2546,10 @@ country_event = {
             attacker_goal = { casus_belli = conquest_any }
             defender_goal = { casus_belli = status_quo }
         }
+		ai_chance = { factor = 1 }
     }
     option = {
         name = "Albania shall be free! §BPlay as the revolt§W"
-		ALB = { government = prussian_constitutionalism political_reform = landed_voting political_reform = harassment }
         any_pop = {
             limit = {
                 has_pop_culture = albanian
@@ -2515,5 +2580,6 @@ country_event = {
             defender_goal = { casus_belli = status_quo }
         }
         change_tag_no_core_switch = ALB
+		ai_chance = { factor = 1 }
     }
 }

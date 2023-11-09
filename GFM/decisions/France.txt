@@ -148,6 +148,7 @@ political_decisions = {
         potential = {
             primary_culture = french
 			NOT = { accepted_culture = greek }
+			NOT = { tag = BOR }
             is_greater_power = yes
             capital = 425
             exists = PRU
@@ -496,28 +497,6 @@ political_decisions = {
             FRA = { set_country_flag = st_barths_referendum }
             BOR = { set_country_flag = st_barths_referendum }
             3246 = { owner = { country_event = 36623 } }
-        }
-        ai_will_do = { factor = 1 }
-    }
-
-    alsace_lorraine_mines = {
-        picture = alsace_lorraine_mines
-        potential = {
-            owns = 409
-            NOT = { 409 = { trade_goods = precious_metal } }
-            regenerative_furnaces = 1
-        }
-
-        allow = {
-            war = no
-            regenerative_furnaces = 1
-            money = 30100
-        }
-
-        effect = {
-            money = -30000
-            412 = { trade_goods = iron }
-            409 = { trade_goods = precious_metal }
         }
         ai_will_do = { factor = 1 }
     }

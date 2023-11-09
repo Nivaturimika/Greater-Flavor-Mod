@@ -2949,7 +2949,36 @@ country_event = {
         }
         JAP = {
             political_reform = regionalism
-            government = absolute_empire
+			random_owned = {
+				limit = {
+					owner = {
+						government = absolute_monarchy
+					}
+				}
+				owner = {
+					government = absolute_empire
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						government = prussian_constitutionalism
+					}
+				}
+				owner = {
+					government = semi_constitutional_empire
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						government = hms_government
+					}
+				}
+				owner = {
+					government = constitutional_empire
+				}
+			}
 			add_country_modifier = {
 				name = resistance_to_new_regime
 				duration = 1000
@@ -2983,7 +3012,16 @@ country_event = {
             }
             inherit = THIS
         }
-        create_vassal = RYU
+        random_owned = {
+			limit = {
+				owner = {
+					RYU = { ai = yes }
+				}
+			}
+			owner = {
+				create_vassal = RYU
+			}
+		}
     }
 }
 
@@ -3327,7 +3365,16 @@ country_event = {
             end_war = THIS
             country_event = 97652
         }
-        create_vassal = RYU
+        random_owned = {
+			limit = {
+				owner = {
+					RYU = { ai = yes }
+				}
+			}
+			owner = {
+				create_vassal = RYU
+			}
+		}
     }
 }
 
@@ -3979,7 +4026,7 @@ country_event = {
     id = 97670
     title = "EVTNAME97670" #The Northern Islands
     desc = "EVTDESC97670"
-    picture = "Southpole3"
+    picture = "kurils"
 
     trigger = {
         OR = {
@@ -5907,7 +5954,7 @@ country_event = {
 			ruling_party_ideology = communist
 		}
 		any_pop = { agree_with_ruling_party = 0.40 }
-		has_country_flag = shinsengumi_coup_warning
+		has_country_flag = shinsengumi_revolt_warning
 	}
 
 	option = {
