@@ -1,0 +1,14 @@
+tagalog = {
+        color = { 193 73 93 }
+        first_names = { Matanda Buano Sulayman Lontok Salalila Aki Arra Asiong Jak Nardong Ambet Ping
+		Zaijian Ejay Tirso Panginoan Lahat Kahiya Gambang Tagkan Kalamayin Laboy Palaba Pasay Balagtas
+
+        }
+
+        last_names = { Alawi Andolong Angara Auring Balagtas Bernal Binay Binene Bumatay
+		Diokno Gadon Joson Kurdi Laban Lakandula Ladyangbata Ylao Bolactala Sakay Magsaysay Manalo Manday
+		Manio Marasigan Misalucha Nabus Nose Ong Ongkiko Panganiban Pangilinan Pineda Pule Putik
+		Salonga Chan Ching
+
+        }
+    }

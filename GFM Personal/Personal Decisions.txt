@@ -1,0 +1,343 @@
+political_decisions = {
+
+	enable_personal_decisions = { picture = guard_dude potential = { NOT = { has_country_flag = personal_decisions_enabled } } allow = { } effect = { set_country_flag = personal_decisions_enabled } ai_will_do = { factor = 0 } }
+	disable_personal_decisions = { picture = guard_dude potential = { has_country_flag = personal_decisions_enabled } allow = { } effect = { clr_country_flag = personal_decisions_enabled } ai_will_do = { factor = 0 } }
+	
+	russia_cores_fuck_off = {
+        picture = guard_dude
+		
+        potential = { has_country_flag = personal_decisions_enabled }
+
+        allow = { }
+
+        effect = {
+			LIT = { all_core = { remove_core = RUS } }
+			POL = { all_core = { remove_core = RUS } }
+			GEO = { all_core = { remove_core = RUS } }
+			ARM = { all_core = { remove_core = RUS } }
+			AZB = { all_core = { remove_core = RUS } }
+			CIR = { all_core = { remove_core = RUS } }
+			DAG = { all_core = { remove_core = RUS } }
+			UBD = { all_core = { remove_core = RUS } }
+			OSS = { all_core = { remove_core = RUS } }
+			CHY = { all_core = { remove_core = RUS } }
+			ROM = { all_core = { remove_core = RUS } }
+		}
+        ai_will_do = { factor = 0 }
+	}
+	german_cores_fuck_off = {
+        picture = guard_dude
+        potential = { has_country_flag = personal_decisions_enabled }
+
+        allow = { }
+
+        effect = {
+			BOH = { all_core = { remove_core = GER } }
+			ITA = { all_core = { remove_core = GER } }
+			CRO = { all_core = { remove_core = GER } }
+			HUN = { all_core = { remove_core = GER } }
+		}
+        ai_will_do = { factor = 0 }
+	}
+	austria_begone = {
+        picture = guard_dude
+        potential = { has_country_flag = personal_decisions_enabled }
+
+        allow = { }
+
+        effect = {
+			AUS = { all_core = { remove_core = AUS } }
+		}
+        ai_will_do = { factor = 0 }
+	}
+	besarabia_fuck_off = {
+        picture = guard_dude
+        potential = { has_country_flag = personal_decisions_enabled }
+
+        allow = { }
+
+        effect = {
+			ROM = { all_core = { remove_core = RUS remove_core = UKR } }
+		}
+        ai_will_do = { factor = 0 }
+	}
+	enable_kacapism = {
+        picture = guard_dude
+        potential = { has_country_flag = personal_decisions_enabled }
+
+        allow = { }
+
+        effect = {
+			BYE = { all_core = { add_core = RUS } }
+			UKR = { all_core = { add_core = RUS } }
+		}
+        ai_will_do = { factor = 0 }
+	}
+	restore_initial_prov_mods = {
+        picture = guard_dude
+        potential = { has_country_flag = personal_decisions_enabled }
+
+        allow = { }
+
+        effect = {
+			TUR = {
+				any_owned = {
+						limit = { is_core = BUL }
+						add_province_modifier = { name = small_baby_boom duration = 3650 }
+					}
+					any_owned = {
+						limit = { is_core = SER }
+						add_province_modifier = { name = baby_boom duration = 3650 }
+					}
+					any_owned = {
+						limit = { is_core = GRE }
+						add_province_modifier = { name = small_baby_boom duration = 3650 }
+					}
+			}
+			TUR_809 = { add_province_modifier = { name = small_baby_boom duration = 2555 } }
+			TUR_810 = { add_province_modifier = { name = small_baby_boom duration = 2555 } }
+			TUR_803 = { add_province_modifier = { name = small_baby_boom duration = 1825 } }
+			TUR_832 = { add_province_modifier = { name = small_baby_boom duration = 730 } }
+			TUR_805 = { add_province_modifier = { name = small_baby_boom duration = 730 } }
+			TUR_823 = { add_province_modifier = { name = small_baby_boom duration = 730 } }
+			WAL = { any_owned = { add_province_modifier = { name = small_baby_boom duration = 3650 } } }
+			MOL = { any_owned = { add_province_modifier = { name = small_baby_boom duration = 3650 } } }
+			RUS = {
+				any_owned = {
+					limit = {
+						OR = {
+							is_core = RUS
+							is_core = UKR
+							is_core = BYE
+						}
+						NOT = {
+							OR = {
+								is_core = POL
+								is_core = LAT
+								is_core = FIN
+								is_core = EST
+								is_core = LIT
+								is_core = TUR
+								is_core = CHY
+								is_core = CIR
+							}
+						}
+						OR = {
+							NOT = { terrain = boreal }
+							NOT = { terrain = arctic }
+							NOT = { terrain = desert }
+							NOT = { terrain = steppe }
+							NOT = { terrain = montane_tundra }
+							NOT = { terrain = marsh }
+						}
+					}
+					add_province_modifier = { name = small_baby_boom duration = 1825 }
+				}
+				any_owned = { limit = { is_core = POL } add_province_modifier = { name = small_baby_boom duration = 1825 } }
+			}
+			BYE = {
+				any_owned = {
+					limit = {
+						OR = {
+							is_core = RUS
+							is_core = UKR
+							is_core = BYE
+						}
+						NOT = {
+							OR = {
+								is_core = POL
+								is_core = LAT
+								is_core = FIN
+								is_core = EST
+								is_core = LIT
+								is_core = TUR
+								is_core = CHY
+								is_core = CIR
+							}
+						}
+						OR = {
+							NOT = { terrain = boreal }
+							NOT = { terrain = arctic }
+							NOT = { terrain = desert }
+							NOT = { terrain = steppe }
+							NOT = { terrain = montane_tundra }
+							NOT = { terrain = marsh }
+						}
+					}
+					add_province_modifier = { name = small_baby_boom duration = 1825 }
+				}
+				any_owned = { limit = { is_core = POL } add_province_modifier = { name = small_baby_boom duration = 1825 } }
+			}
+			UKR = {
+				any_owned = {
+					limit = {
+						OR = {
+							is_core = RUS
+							is_core = UKR
+							is_core = BYE
+						}
+						NOT = {
+							OR = {
+								is_core = POL
+								is_core = LAT
+								is_core = FIN
+								is_core = EST
+								is_core = LIT
+								is_core = TUR
+								is_core = CHY
+								is_core = CIR
+							}
+						}
+						OR = {
+							NOT = { terrain = boreal }
+							NOT = { terrain = arctic }
+							NOT = { terrain = desert }
+							NOT = { terrain = steppe }
+							NOT = { terrain = montane_tundra }
+							NOT = { terrain = marsh }
+						}
+					}
+					add_province_modifier = { name = small_baby_boom duration = 1825 }
+				}
+				any_owned = { limit = { is_core = POL } add_province_modifier = { name = small_baby_boom duration = 1825 } }
+			}
+			CPL = {
+				any_owned = {
+					limit = {
+						OR = {
+							is_core = RUS
+							is_core = UKR
+							is_core = BYE
+						}
+						NOT = {
+							OR = {
+								is_core = POL
+								is_core = LAT
+								is_core = FIN
+								is_core = EST
+								is_core = LIT
+								is_core = TUR
+								is_core = CHY
+								is_core = CIR
+							}
+						}
+						OR = {
+							NOT = { terrain = boreal }
+							NOT = { terrain = arctic }
+							NOT = { terrain = desert }
+							NOT = { terrain = steppe }
+							NOT = { terrain = montane_tundra }
+							NOT = { terrain = marsh }
+						}
+					}
+					add_province_modifier = { name = small_baby_boom duration = 1825 }
+				}
+				any_owned = { limit = { is_core = POL } add_province_modifier = { name = small_baby_boom duration = 1825 } }
+			}
+			any_country = {
+					any_owned = {
+						limit = {
+							OR = {
+								is_core = LAT
+								is_core = LIT
+								is_core = EST
+							}
+							OR = {
+								NOT = { terrain = boreal }
+								NOT = { terrain = arctic }
+								NOT = { terrain = desert }
+								NOT = { terrain = steppe }
+								NOT = { terrain = montane_tundra }
+								NOT = { terrain = marsh }
+							}
+							NOT = { is_core = GER }
+						}
+						add_province_modifier = { name = small_baby_boom duration = 1095 }
+					}
+				}
+		}
+        ai_will_do = { factor = 0 }
+	}
+	add_haiti_cores_caribbean = {
+        picture = guard_dude
+        potential = { has_country_flag = personal_decisions_enabled }
+
+        allow = { }
+
+        effect = {
+			SPA_2209 = { add_core = HAI }
+			ENG_203 = { add_core = HAI }
+			ENG_2224 = { add_core = HAI }
+			ENG_2228 = { add_core = HAI }
+			3393 = { add_core = HAI }
+			2190 = { add_core = HAI }
+		}
+        ai_will_do = { factor = 0 }
+	}
+	add_haiti_cores_guayana = {
+        picture = guard_dude
+        potential = { has_country_flag = personal_decisions_enabled }
+
+        allow = { }
+
+        effect = {
+			ENG_1979 = { add_core = HAI }
+			3568 = { add_core = HAI }
+		}
+        ai_will_do = { factor = 0 }
+	}
+	add_new_poland_cores_fca = {
+        picture = guard_dude
+        potential = { has_country_flag = personal_decisions_enabled }
+
+        allow = { }
+
+        effect = {
+			UCA_2186 = { add_core = PLG }
+			UCA_2191 = { add_core = PLG }
+			UCA_2197 = { add_core = PLG }
+			UCA_2201 = { add_core = PLG }
+			UCA_2193 = { add_core = PLG }
+			MEX_2183 = { add_core = PLG }
+			MEX_2181 = { add_core = PLG }
+			CLM_1723 = { add_core = PLG }
+		}
+        ai_will_do = { factor = 0 }
+	}
+	add_haiti_cores_texas = {
+        picture = guard_dude
+        potential = { has_country_flag = personal_decisions_enabled }
+
+        allow = { }
+
+        effect = {
+			TEX_132 = { add_core = HAI }
+			135 = { remove_core = HAI }
+			136 = { remove_core = HAI }
+			138 = { remove_core = HAI }
+		}
+        ai_will_do = { factor = 0 }
+	}
+	fix_faizabad_farmers = {
+        picture = guard_dude
+        potential = { has_country_flag = personal_decisions_enabled }
+
+        allow = { }
+
+        effect = {
+			any_pop = { limit = { location = { province_id = 1210 } type = farmers } pop_type = labourers }
+		}
+        ai_will_do = { factor = 0 }
+	}
+	fix_pirate_farmers = {
+        picture = guard_dude
+        potential = { has_country_flag = personal_decisions_enabled }
+
+        allow = { }
+
+        effect = {
+			any_pop = { limit = { OR = { location = { province_id = 3393 } location = { province_id = 3614 } } type = farmers } pop_type = labourers }
+		}
+        ai_will_do = { factor = 0 }
+	}
+}
