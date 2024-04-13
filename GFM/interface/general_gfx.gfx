@@ -306,7 +306,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_bg_horizontal_slider_300wide"
-		texturefile = "gfx\\interface\\bg_horizontal_slider_280.tga"
+		texturefile = "gfx\\interface\\bg_horizontal_slider_280.dds"
 	}
 	spriteType = {
 		name = "GFX_progress_overlay_16_64"
