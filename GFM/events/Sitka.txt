@@ -181,10 +181,8 @@ country_event = {
 		random_owned = {
 			limit = {
 				owner = {
-					NOT = {
-						high_pressure_steam_engine = 1
-						overlord = { high_pressure_steam_engine = 1 }
-					}
+					NOT = { high_pressure_steam_engine = 1 }
+					overlord = { high_pressure_steam_engine = 1 }
 				}
 			}
 			owner = {
@@ -1201,26 +1199,26 @@ country_event = {
 
 country_event = {
 	id = 847295
-	title = "The Battle of Pákozd"
+	title = "The Battle of PÃ¡kozd"
 	desc = "PAKOZDBATTLE"
 	picture = "pakozd"
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
-		name = "Éljen Magyarország!"
+		name = "Ã‰ljen MagyarorszÃ¡g!"
 		set_country_flag = hungarian_revolution_began
 		small_arms = 100
 		regular_clothes = 100
-		define_general = { name = "Józef Bem" personality = defence_3.1 background = attack_1.1 }
-		define_general = { name = "János Móga" personality = no_personality background = attack_3.1 }
-		define_general = { name = "Mór Perczel" personality = defence_1.1 background = attack_1.1 }
-		define_general = { name = "Artúr Görgei" personality = defence_2.1 background = attack_minus_1.1 }
-		define_general = { name = "György Klapka" personality = defence_1.1 background = no_background }
-		define_general = { name = "János Damjanich" personality = defence_2.1 background = attack_2.1 }
+		define_general = { name = "JÃ³zef Bem" personality = defence_3.1 background = attack_1.1 }
+		define_general = { name = "JÃ¡nos MÃ³ga" personality = no_personality background = attack_3.1 }
+		define_general = { name = "MÃ³r Perczel" personality = defence_1.1 background = attack_1.1 }
+		define_general = { name = "ArtÃºr GÃ¶rgei" personality = defence_2.1 background = attack_minus_1.1 }
+		define_general = { name = "GyÃ¶rgy Klapka" personality = defence_1.1 background = no_background }
+		define_general = { name = "JÃ¡nos Damjanich" personality = defence_2.1 background = attack_2.1 }
 		define_general = { name = "Lajos Aulich" personality = defence_minus_1.1 background = attack_2.1 }
-		define_general = { name = "Károly Vécsey" personality = no_personality background = attack_2.1 }
-		define_general = { name = "András Gáspár" personality = defence_1.1 background = attack_2.1 }
+		define_general = { name = "KÃ¡roly VÃ©csey" personality = no_personality background = attack_2.1 }
+		define_general = { name = "AndrÃ¡s GÃ¡spÃ¡r" personality = defence_1.1 background = attack_2.1 }
 		define_general = { name = "Henryk Dembinski" personality = defence_1.1 background = attack_2.1 }
 		add_country_modifier = {
 			name = begin_revolution
@@ -1495,7 +1493,7 @@ country_event = {
     mean_time_to_happen = { days = 1 }
 
 	option = {
-        name = "We must recognize the Isle of Pines as Cuban. §GLose 1 infamy§W"
+        name = "We must recognize the Isle of Pines as Cuban. Â§GLose 1 infamyÂ§W"
 		badboy = -1
 		3660 = { secede_province = CUB }
 		relation = { who = CUB value = 150 }
@@ -1528,7 +1526,7 @@ country_event = {
     mean_time_to_happen = { days = 1 }
 
 	option = {
-        name = "Force them to integrate the Platt Amendment. §RGain 1 infamy§!"
+        name = "Force them to integrate the Platt Amendment. Â§RGain 1 infamyÂ§!"
 		badboy = 1
 		release_vassal = CUB
 		3660 = { secede_province = THIS }
@@ -1876,7 +1874,7 @@ country_event = {
 	is_triggered_only = yes
 	allow_multiple_instances = yes
     option = {
-        name = "We must control $FROMCOUNTRY$ directly. §RGain 3 infamy§W"
+        name = "We must control $FROMCOUNTRY$ directly. Â§RGain 3 infamyÂ§W"
 		badboy = 3
 		create_vassal = FROM
     }
@@ -1892,7 +1890,7 @@ country_event = {
     picture = "french_canada"
 	is_triggered_only = yes
     option = {
-        name = "We shall only take the French-speaking lands. §RGain 5 infamy§W"
+        name = "We shall only take the French-speaking lands. Â§RGain 5 infamyÂ§W"
 		FRA = {
 			set_country_flag = quebec_regained
 			set_country_flag = quebec_and_acadia_only
@@ -1932,7 +1930,7 @@ country_event = {
 		USA = { remove_accepted_culture = acadian }
     }
     option = {
-        name = "All of Canada is ours! §RGain 10 infamy§W"
+        name = "All of Canada is ours! Â§RGain 10 infamyÂ§W"
 		FRA = { set_country_flag = french_total_victory set_country_flag = quebec_regained }
 		BOR = { set_country_flag = french_total_victory set_country_flag = quebec_regained }
 		badboy = 10
@@ -1952,7 +1950,7 @@ country_event = {
 }
 country_event = {
     id = 20041218
-    title = "Gálvez deposed"
+    title = "GÃ¡lvez deposed"
     desc = "GALVEZDEPOSED"
     fire_only_once = yes
     picture = "turcios"
@@ -2076,7 +2074,7 @@ country_event = {
 country_event = {
 	id = 20041214
 	title = "Ecuador breaks the Pando-Noboa Treaty"
-	desc = "The Ecuadorians have used our momentary vulnerability due to our war with Bolivia to tear up the Pando-Noboa Treaty and claim Tumbes and Jaén once again."
+	desc = "The Ecuadorians have used our momentary vulnerability due to our war with Bolivia to tear up the Pando-Noboa Treaty and claim Tumbes and JaÃ©n once again."
 	picture = "peru_ecuador_border"
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -2139,7 +2137,7 @@ country_event = {
     }
 
     option = {
-        name = "Kham belongs to the Nyarong! §BPlay the revolt§W"
+        name = "Kham belongs to the Nyarong! Â§BPlay the revoltÂ§W"
 		1586 = { secede_province = SZC }
 		1582 = { secede_province = SZC }
 		war = {
@@ -2237,7 +2235,7 @@ country_event = {
     }
 
     option = {
-        name = "Never! It's ours now. §RGain 1 infamy§W"
+        name = "Never! It's ours now. Â§RGain 1 infamyÂ§W"
 		badboy = 1
 		relation = { who = FROM value = -50 }
 		FROM = { country_event = 1239510 }
@@ -2261,7 +2259,7 @@ country_event = {
     }
 
     option = {
-        name = "Never! It's ours now. §RGain 1 infamy§W"
+        name = "Never! It's ours now. Â§RGain 1 infamyÂ§W"
 		badboy = 1
 		relation = { who = FROM value = -50 }
 		FROM = { country_event = 1239510 }
@@ -2303,7 +2301,7 @@ country_event = {
 	}
 
     option = {
-        name = "This is our chance! §RGain 3 infamy§W"
+        name = "This is our chance! Â§RGain 3 infamyÂ§W"
 		badboy = 3
 		war = {
             target = KAZ
@@ -2361,7 +2359,7 @@ country_event = {
     }
 
     option = {
-        name = "The Bukey shall be free! §BPlay the revolt§W"
+        name = "The Bukey shall be free! Â§BPlay the revoltÂ§W"
 		release_vassal = BKY
 		war = {
 			target = BKY
@@ -2416,7 +2414,7 @@ country_event = {
     }
 
     option = {
-        name = "Do whatever it takes! No step back! §RGain 3.5 infamy§W"
+        name = "Do whatever it takes! No step back! Â§RGain 3.5 infamyÂ§W"
 		treasury = -400000
 		casus_belli = { target = KHI type = great_game_cb months = 36 }
 		war = {
@@ -2535,7 +2533,7 @@ country_event = {
     }
 
     option = {
-        name = "We must control the coast. §RGain 3 infamy§W"
+        name = "We must control the coast. Â§RGain 3 infamyÂ§W"
 		badboy = 3
 		casus_belli = { target = ZAN type = conquest_any months = 12 }
 		war = { target = ZAN attacker_goal = { casus_belli = conquest_any } call_ally = yes }
@@ -2724,7 +2722,7 @@ country_event = {
 country_event = {
 	id = 123953
 	title = "$FROMCOUNTRY$ seizes Bouvet Island"
-	desc = "$FROMCOUNTRY_ADJ$ have used dated claims as a pretext to land on Bouvetøya backed by several gunboats and arrest the sealers present, replacing our flag with the Union Jack."
+	desc = "$FROMCOUNTRY_ADJ$ have used dated claims as a pretext to land on BouvetÃ¸ya backed by several gunboats and arrest the sealers present, replacing our flag with the Union Jack."
 	picture = "bouvet_annexation"
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -2744,7 +2742,7 @@ country_event = {
 	is_triggered_only = yes
 
     option = {
-        name = "Snatch it from them! §RGain 0.1 infamy§W"
+        name = "Snatch it from them! Â§RGain 0.1 infamyÂ§W"
 		relation = { who = NOR value = -150 }
 		diplomatic_influence = { who = NOR value = -150 }
 		badboy = 0.1
@@ -2954,7 +2952,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "Grant them autonomy. §GLose 5 infamy§W"
+		name = "Grant them autonomy. Â§GLose 5 infamyÂ§W"
 		badboy = -5
 		diplomatic_influence = { who = PHL value = 400 }
 		PHL = { set_country_flag = post_colonial_country }
@@ -2984,8 +2982,8 @@ country_event = {
 }
 country_event = {
 	id = 123944
-	title = "The Captaincy General of Yucatán"
-	desc = "Spain has decided to give autonomy to the Captaincy General of Yucatán."
+	title = "The Captaincy General of YucatÃ¡n"
+	desc = "Spain has decided to give autonomy to the Captaincy General of YucatÃ¡n."
 	picture = "yuc_event"
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -3512,8 +3510,8 @@ country_event = {
 }
 country_event = {
 	id = 123937
-	title = "The Captaincy General of Yucatán"
-	desc = "Split off as a territorial entity from New Spain in 1565, the Captaincy General of Yucatán's purpose was enabling the local resolution of legal matters. Shall we re-establish it?"
+	title = "The Captaincy General of YucatÃ¡n"
+	desc = "Split off as a territorial entity from New Spain in 1565, the Captaincy General of YucatÃ¡n's purpose was enabling the local resolution of legal matters. Shall we re-establish it?"
 	picture = "yuc_event"
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -3785,7 +3783,7 @@ country_event = {
 }
 country_event = {
 	id = 123923
-	title = "Lindt & Sprüngli"
+	title = "Lindt & SprÃ¼ngli"
 	desc = "LINDORCHOCOLATE"
 	picture = "lindt"
 	fire_only_once = yes
@@ -4162,7 +4160,7 @@ country_event = {
 country_event = {
 	id = 126492
 	title = "Venezuela refuses"
-	desc = "Foreign minister Antonio Guzmán of Venezuela has refused to sign the proposed treaty to submit our border dispute to the Queen of Spain for arbitration."
+	desc = "Foreign minister Antonio GuzmÃ¡n of Venezuela has refused to sign the proposed treaty to submit our border dispute to the Queen of Spain for arbitration."
 	picture = "guzman"
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -4207,7 +4205,7 @@ country_event = {
 country_event = {
 	id = 126491
 	title = "Venezuela accepts"
-	desc = "Foreign minister Antonio Guzmán of Venezuela has signed the proposed treaty to submit our border dispute to the Queen of Spain for arbitration."
+	desc = "Foreign minister Antonio GuzmÃ¡n of Venezuela has signed the proposed treaty to submit our border dispute to the Queen of Spain for arbitration."
 	picture = "guzman"
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -4248,7 +4246,7 @@ country_event = {
 }
 country_event = {
 	id = 126490
-	title = "The Arosemena-Guzmán Treaty"
+	title = "The Arosemena-GuzmÃ¡n Treaty"
 	desc = "Foreign minister Justo Arosemena of Colombia has proposed we sign a treaty to submit our border dispute to the Queen of Spain for arbitration."
 	picture = "arosemena"
 	fire_only_once = yes
@@ -4519,7 +4517,7 @@ country_event = {
     }
 
     option = {
-        name = "That sounds quite lucrative... §BBecome Tippu Tip§W"
+        name = "That sounds quite lucrative... Â§BBecome Tippu TipÂ§W"
 		TPT = { all_core = { remove_core = TPT } }
 		1990 = { secede_province = THIS add_core = TPT }
 		1991 = { secede_province = THIS add_core = TPT }
@@ -4703,7 +4701,7 @@ country_event = {
     }
 
     option = {
-        name = "Federation or death! §BLead the revolt§W"
+        name = "Federation or death! Â§BLead the revoltÂ§W"
 		war_exhaustion = 10
 		2165 = { secede_province = TBS }
 		war = {
@@ -4771,7 +4769,7 @@ country_event = {
     }
 
     option = {
-        name = "Expel the Italian pigs! §BLead the revolt§W"
+        name = "Expel the Italian pigs! Â§BLead the revoltÂ§W"
 		GEL = { government = theocracy }
 		1869 = { secede_province = GEL add_core = GEL }
 		3712 = { secede_province = GEL add_core = GEL }
@@ -4839,7 +4837,7 @@ country_event = {
     }
 
     option = {
-        name = "Ong Keo shall rule the world! §BLead the revolt§W"
+        name = "Ong Keo shall rule the world! Â§BLead the revoltÂ§W"
 		CHK = { government = theocracy }
 		random_owned = {
 			limit = {
@@ -4898,7 +4896,7 @@ country_event = {
     }
 
     option = {
-        name = "The time has come for the Hmong to be free! §BLead the revolt§W"
+        name = "The time has come for the Hmong to be free! Â§BLead the revoltÂ§W"
 		LUA = { government = theocracy }
 		1372 = { secede_province = LUA add_core = LUA }
 		3415 = { secede_province = LUA add_core = LUA }
@@ -5112,7 +5110,7 @@ country_event = {
     mean_time_to_happen = { months = 1 }
 
     option = {
-        name = "So ends the Talpur dynasty. §RGain 2.5 infamy§W"
+        name = "So ends the Talpur dynasty. Â§RGain 2.5 infamyÂ§W"
 		relation = { who = PNJ value = -150 }
 		diplomatic_influence = { who = PNJ value = -50 }
 		relation = { who = SIN value = -400 }
@@ -5566,7 +5564,7 @@ country_event = {
 	}
 
 	option = {
-		name = "For Serbia! §BPlay as the revolt§W"
+		name = "For Serbia! Â§BPlay as the revoltÂ§W"
 		SRR = { government = prov_gov_liberal }
 		any_owned = {
 			limit = {
@@ -6156,12 +6154,12 @@ country_event = {
 			secede_province = SLV
 		}
 		AUS = { create_alliance = SLV diplomatic_influence = { who = SLV value = 400 } }
-		SLV = { government = prov_gov_liberal ruling_party_ideology = liberal capital = 636 define_general = { name = "Ján Francisci-Rimavský" personality = defence_1.1 background = attack_1.1 } define_general = { name = "Štefan Marko Daxner" personality = defence_1.1 background = attack_1.1 } }
+		SLV = { government = prov_gov_liberal ruling_party_ideology = liberal capital = 636 define_general = { name = "JÃ¡n Francisci-RimavskÃ½" personality = defence_1.1 background = attack_1.1 } define_general = { name = "ÂŠtefan Marko Daxner" personality = defence_1.1 background = attack_1.1 } }
 		ai_chance = { factor = 1 }
 	}
 
 	option = {
-		name = "Slovakia will be free of Magyar yoke! §BPlay as Slovakia§!"
+		name = "Slovakia will be free of Magyar yoke! Â§BPlay as SlovakiaÂ§!"
 		AUS = { country_event = { id = 123902 days = 3 } }
 		HUN = { country_event = { id = 123901 days = 3 } }
 		any_owned = {
@@ -6177,13 +6175,13 @@ country_event = {
 			secede_province = SLV
 		}
 		AUS = { create_alliance = SLV diplomatic_influence = { who = SLV value = 400 } }
-		SLV = { government = prov_gov_liberal ruling_party_ideology = liberal capital = 636 define_general = { name = "Ján Francisci-Rimavský" personality = defence_1.1 background = attack_1.1 } define_general = { name = "Štefan Marko Daxner" personality = defence_1.1 background = attack_1.1 } }
+		SLV = { government = prov_gov_liberal ruling_party_ideology = liberal capital = 636 define_general = { name = "JÃ¡n Francisci-RimavskÃ½" personality = defence_1.1 background = attack_1.1 } define_general = { name = "ÂŠtefan Marko Daxner" personality = defence_1.1 background = attack_1.1 } }
 		change_tag_no_core_switch = SLV
 		ai_chance = { factor = 0 }
 	}
 
 	option = {
-		name = "We are left with no choice. §GLose 5 infamy§W"
+		name = "We are left with no choice. Â§GLose 5 infamyÂ§W"
 		release_vassal = SLV
 		create_alliance = SLV
 		635 = { secede_province = THIS }
@@ -6234,7 +6232,7 @@ country_event = {
 	}
 
 	option = {
-		name = "We cannot afford to begin infighting. §GLose 5 infamy§W"
+		name = "We cannot afford to begin infighting. Â§GLose 5 infamyÂ§W"
 		release_vassal = SLV
 		create_alliance = SLV
 		635 = { secede_province = THIS }
@@ -6259,7 +6257,7 @@ country_event = {
 }
 country_event = {
 	id = 123898
-	title = "The Janko Král Incident"
+	title = "The Janko KrÃ¡l Incident"
 	desc = "KRALINCIDENT"
 	picture = "kral_incident"
 	fire_only_once = yes
@@ -6480,7 +6478,7 @@ country_event = {
     }
 
 	option = {
-		name = "Freedom for the Palatinate! §BPlay as the Palatinate§W"
+		name = "Freedom for the Palatinate! Â§BPlay as the PalatinateÂ§W"
 		571 = { secede_province = PAL }
 		3904 = { secede_province = PAL }
 		PAL = { ruling_party_ideology = radical government = radical_republic }
@@ -6700,7 +6698,7 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
     option = {
-        name = "We aren't ready for war. §GLose 3 infamy§W"
+        name = "We aren't ready for war. Â§GLose 3 infamyÂ§W"
 		badboy = -3
 		prestige = -15
 		3781 = { remove_core = AMA }
@@ -6761,7 +6759,7 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
     option = {
-        name = "We won't forget this. §GLose 3 infamy§W"
+        name = "We won't forget this. Â§GLose 3 infamyÂ§W"
 		relation = { who = USA value = -120 }
 		badboy = -3
 		prestige = -15
@@ -6952,7 +6950,7 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
     option = {
-        name = "Give it to them. §GLose 3 infamy§W"
+        name = "Give it to them. Â§GLose 3 infamyÂ§W"
 		badboy = -3
 		prestige = -15
 		2243 = { secede_province = VNZ remove_core = AMA }
@@ -6963,7 +6961,7 @@ country_event = {
 		ai_chance = { factor = 0 }
     }
 	option = {
-		name = "No way, José."
+		name = "No way, JosÃ©."
 		VNZ = { country_event = 123857 }
 		ai_chance = { factor = 1 }
     }
@@ -7069,7 +7067,7 @@ country_event = {
 		ai_chance = { factor = 1 }
     }
 	option = {
-        name = "Then we shall take it ourselves! §RGain 1 infamy§W"
+        name = "Then we shall take it ourselves! Â§RGain 1 infamyÂ§W"
 		casus_belli = { target = SMO type = establish_protectorate_casus_belli months = 36 }
 		badboy = 1
 		ai_chance = { factor = 1 }
@@ -7117,7 +7115,7 @@ country_event = {
 		ai_chance = { factor = 1 }
     }
 	option = {
-        name = "We will not compromise! §RGain 1 infamy§W"
+        name = "We will not compromise! Â§RGain 1 infamyÂ§W"
 		casus_belli = { target = SMO type = establish_protectorate_casus_belli months = 36 }
 		badboy = 1
 		relation = { who = USA value = -50 }
@@ -7145,7 +7143,7 @@ country_event = {
 		ai_chance = { factor = 1 }
     }
 	option = {
-        name = "We will not back down! §RGain 1 infamy§W"
+        name = "We will not back down! Â§RGain 1 infamyÂ§W"
 		casus_belli = { target = SMO type = establish_protectorate_casus_belli months = 36 }
 		badboy = 1
 		ai_chance = { factor = 1 }
@@ -7163,7 +7161,7 @@ country_event = {
 		ai_chance = { factor = 1 }
     }
 	option = {
-        name = "We will not back down! §RGain 1 infamy§W"
+        name = "We will not back down! Â§RGain 1 infamyÂ§W"
 		casus_belli = { target = SMO type = establish_protectorate_casus_belli months = 36 }
 		badboy = 1
 		ai_chance = { factor = 1 }
@@ -7182,7 +7180,7 @@ country_event = {
 		ai_chance = { factor = 1 }
     }
 	option = {
-        name = "We will not compromise! §RGain 1 infamy§W"
+        name = "We will not compromise! Â§RGain 1 infamyÂ§W"
 		casus_belli = { target = SMO type = establish_protectorate_casus_belli months = 36 }
 		badboy = 1
 		relation = { who = ENG value = -50 }
@@ -7204,7 +7202,7 @@ country_event = {
 		ai_chance = { factor = 1 }
     }
 	option = {
-        name = "We will not back down! §RGain 1 infamy§W"
+        name = "We will not back down! Â§RGain 1 infamyÂ§W"
 		casus_belli = { target = SMO type = establish_protectorate_casus_belli months = 36 }
 		badboy = 1
 		ai_chance = { factor = 1 }
@@ -7222,7 +7220,7 @@ country_event = {
 		ai_chance = { factor = 1 }
     }
 	option = {
-        name = "We will not back down! §RGain 1 infamy§W"
+        name = "We will not back down! Â§RGain 1 infamyÂ§W"
 		casus_belli = { target = SMO type = establish_protectorate_casus_belli months = 36 }
 		badboy = 1
 		ai_chance = { factor = 1 }
@@ -7258,7 +7256,7 @@ country_event = {
 		ai_chance = { factor = 1 }
     }
 	option = {
-        name = "We will not compromise! §RGain 1 infamy§W"
+        name = "We will not compromise! Â§RGain 1 infamyÂ§W"
 		casus_belli = { target = SMO type = establish_protectorate_casus_belli months = 36 }
 		badboy = 1
 		relation = { who = USA value = -50 }
@@ -7292,7 +7290,7 @@ country_event = {
 		ai_chance = { factor = 70 }
     }
 	option = {
-        name = "We must directly control the island of Sicily! §RGain 6 infamy§W"
+        name = "We must directly control the island of Sicily! Â§RGain 6 infamyÂ§W"
 		badboy = 6
 		casus_belli = { target = SIC type = acquire_state months = 36 }
 		war = {
@@ -7328,7 +7326,7 @@ country_event = {
 		ai_chance = { factor = 70 }
     }
 	option = {
-        name = "We must directly control the island of Sicily! §RGain 6 infamy§W"
+        name = "We must directly control the island of Sicily! Â§RGain 6 infamyÂ§W"
 		badboy = 6
 		casus_belli = { target = SIC type = acquire_state months = 36 }
 		war = {
@@ -7774,7 +7772,7 @@ country_event = {
 }
 country_event = {
     id = 123818
-    title = "The Züriputsch"
+    title = "The ZÃ¼riputsch"
     desc = "ZURIPUTSCH"
     picture = "zuriputsch"
 	fire_only_once = yes
@@ -10778,8 +10776,8 @@ country_event = {
 }
 country_event = {
     id = 54679008
-    title = "Santa Bárbara"
-    desc = "Without a land connection to Santa Bárbara, its owners can no longer defend it. We will therefore take it over."
+    title = "Santa BÃ¡rbara"
+    desc = "Without a land connection to Santa BÃ¡rbara, its owners can no longer defend it. We will therefore take it over."
 	is_triggered_only = yes
     option = {
         name = "Huzzah!"
@@ -10788,8 +10786,8 @@ country_event = {
 }
 country_event = {
     id = 54679009
-    title = "The loss of Santa Bárbara"
-    desc = "Without a land connection to Santa Bárbara, the owners of La Esmeralda have taken it over."
+    title = "The loss of Santa BÃ¡rbara"
+    desc = "Without a land connection to Santa BÃ¡rbara, the owners of La Esmeralda have taken it over."
     trigger = {
        owns = 696
 	   NOT = {
@@ -11396,8 +11394,8 @@ country_event = {
 }
 country_event = {
     id = 54679042
-    title = "El Moján"
-    desc = "Without a land connection to El Moján, its owners can no longer defend it. We will therefore take it over."
+    title = "El MojÃ¡n"
+    desc = "Without a land connection to El MojÃ¡n, its owners can no longer defend it. We will therefore take it over."
 	is_triggered_only = yes
     option = {
         name = "Huzzah!"
@@ -12036,7 +12034,7 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
     option = {
-        name = "Forgive them. §GLose 0.5 infamy§W"
+        name = "Forgive them. Â§GLose 0.5 infamyÂ§W"
 		prestige = -20
 		badboy = -0.5
 		ai_chance = { factor = 0 }
@@ -12933,7 +12931,7 @@ country_event = {
     mean_time_to_happen = { months = 3 }
 
     option = {
-		name = "Crush them! §RGain 0.5 infamy§W"
+		name = "Crush them! Â§RGain 0.5 infamyÂ§W"
 		badboy = 0.5
 	    relation = { who = HNZ value = -400 }
         diplomatic_influence = { who = HNZ value = -400 }
@@ -13154,8 +13152,8 @@ country_event = {
 }
 country_event = {
     id = 233642
-    title = "Punta Porá"
-    desc = "Without a land connection to Punta Porá, its owners can no longer defend it. We will therefore take it over."
+    title = "Punta PorÃ¡"
+    desc = "Without a land connection to Punta PorÃ¡, its owners can no longer defend it. We will therefore take it over."
 	is_triggered_only = yes
     option = {
         name = "Huzzah!"
@@ -13164,8 +13162,8 @@ country_event = {
 }
 country_event = {
     id = 233641
-    title = "The Loss of Punta Porá"
-    desc = "Without a land connection to Punta Porá, the owners of Campo Grande have taken it over."
+    title = "The Loss of Punta PorÃ¡"
+    desc = "Without a land connection to Punta PorÃ¡, the owners of Campo Grande have taken it over."
     trigger = {
 		owns = 2420
 		NOT = {
@@ -13598,7 +13596,7 @@ country_event = {
 		ai_chance = { factor = 1 }
     }
     option = {
-        name = "Sri lamkavata dirghayu veva! §BPlay as Sri Lanka§W"
+        name = "Sri lamkavata dirghayu veva! Â§BPlay as Sri LankaÂ§W"
         any_pop = {
             limit = {
                 has_pop_culture = sinhala
@@ -13676,7 +13674,7 @@ country_event = {
 		MAD = { civilized = yes government = democracy political_reform = universal_voting political_reform = secret_ballots }
     }
     option = {
-        name = "Madagascar will be freed! §BPlay as Madagascar§!"
+        name = "Madagascar will be freed! Â§BPlay as MadagascarÂ§!"
         any_pop = {
             limit = {
                 has_pop_culture = malagasy
@@ -13900,7 +13898,7 @@ country_event = {
         }
     }
     option = {
-        name = "There's nothing we can do. §GLose 1 infamy§W"
+        name = "There's nothing we can do. Â§GLose 1 infamyÂ§W"
         prestige = -5
         badboy = -1
     }
@@ -16112,7 +16110,7 @@ country_event = {
         }
     }
     option = {
-        name = "Let it go. §GLose 1 infamy§W"
+        name = "Let it go. Â§GLose 1 infamyÂ§W"
         badboy = -1
         prestige = -3
     }
@@ -16221,7 +16219,7 @@ country_event = {
 		CHR = { ruling_party_ideology = liberal government = prov_gov_liberal }
     }
     option = {
-        name = "Depose Montt! §BPlay as the revolt§W"
+        name = "Depose Montt! Â§BPlay as the revoltÂ§W"
         any_owned = {
             limit = {
                 OR = {
@@ -16297,7 +16295,7 @@ country_event = {
 		CHR = { ruling_party_ideology = conservative government = prov_gov_conservative }
     }
     option = {
-        name = "Depose Balmaceda! §BPlay as the revolt§W"
+        name = "Depose Balmaceda! Â§BPlay as the revoltÂ§W"
         any_owned = {
             limit = {
                 OR = {
@@ -16735,7 +16733,7 @@ country_event = {
         NOT = { year = 1841 }
     }
     option = {
-        name = "Who cares? §GLose 1 infamy§W"
+        name = "Who cares? Â§GLose 1 infamyÂ§W"
         prestige = -5
         badboy = -1
 		ai_chance = { factor = 20 }
@@ -16810,7 +16808,7 @@ country_event = {
     fire_only_once = yes
     is_triggered_only = yes
     option = {
-        name = "We will make them pay! §RGain 1 infamy§W"
+        name = "We will make them pay! Â§RGain 1 infamyÂ§W"
 		casus_belli = { target = MEX type = war_reparations months = 12 }
 		badboy = 1
 		random_owned = {
@@ -16859,7 +16857,7 @@ country_event = {
 		NOT = { has_global_flag = colonial_railroading_disabled }
     }
     option = {
-        name = "Bon voyage et à bientôt, Eure!"
+        name = "Bon voyage et Ã  bientÃ´t, Eure!"
         3414 = { secede_province = THIS trade_goods = coal }
 		3414 = { change_province_name = "Port-Christmas" }
     }
@@ -16901,7 +16899,7 @@ country_event = {
 	is_triggered_only = yes
 
     option = {
-        name = "Only take the land North of the 37th parallel and East of the Rio Grande. §GLose 7 infamy§W"
+        name = "Only take the land North of the 37th parallel and East of the Rio Grande. Â§GLose 7 infamyÂ§W"
         badboy = -7
 		prestige = 45
         set_country_flag = alternate_history_us_mexico_war
@@ -16956,7 +16954,7 @@ country_event = {
 		ai_chance = { factor = 1 }
     }
     option = {
-        name = "Follow Sam Houston's proposal and take land further South. §RGain 20 infamy§W"
+        name = "Follow Sam Houston's proposal and take land further South. Â§RGain 20 infamyÂ§W"
         badboy = 20
 		prestige = 30
         set_country_flag = alternate_history_us_mexico_war
@@ -16987,7 +16985,7 @@ country_event = {
 		ai_chance = { factor = 0 }
     }
     option = {
-        name = "All of Mexico is ours! §RGain 40 infamy§W"
+        name = "All of Mexico is ours! Â§RGain 40 infamyÂ§W"
         badboy = 40
 		prestige = 25
         set_country_flag = alternate_history_us_mexico_war
@@ -17028,7 +17026,7 @@ country_event = {
 	is_triggered_only = yes
 
     option = {
-        name = "Only take the land North of the 37th parallel and East of the Rio Grande. §GLose 7 infamy§W"
+        name = "Only take the land North of the 37th parallel and East of the Rio Grande. Â§GLose 7 infamyÂ§W"
         badboy = -7
 		prestige = 45
         set_country_flag = alternate_history_us_mexico_war
@@ -17085,7 +17083,7 @@ country_event = {
 		ai_chance = { factor = 1 }
     }
     option = {
-        name = "Follow Sam Houston's proposal and take land further South. §RGain 20 infamy§W"
+        name = "Follow Sam Houston's proposal and take land further South. Â§RGain 20 infamyÂ§W"
         badboy = 20
 		prestige = 30
         set_country_flag = alternate_history_us_mexico_war
@@ -17414,7 +17412,7 @@ country_event = {
     fire_only_once = yes
     is_triggered_only = yes
     option = {
-        name = "We don't need more land. §GLose 10 infamy§W"
+        name = "We don't need more land. Â§GLose 10 infamyÂ§W"
         badboy = -10
 		prestige = 45
 		set_global_flag = mex_took_texas_maw
@@ -17429,7 +17427,7 @@ country_event = {
 		}
     }
     option = {
-        name = "Take the Oregon territory. §RGain 5 infamy§W"
+        name = "Take the Oregon territory. Â§RGain 5 infamyÂ§W"
 		badboy = 5
 		prestige = 40
 		random_owned = { limit = { owner = { CAL = { exists = yes ai = yes } } } owner = { inherit = CAL } }
@@ -17454,7 +17452,7 @@ country_event = {
 		}
     }
     option = {
-        name = "All land West of the Mississippi is Mexican. §RGain 15 infamy§W"
+        name = "All land West of the Mississippi is Mexican. Â§RGain 15 infamyÂ§W"
 		badboy = 15
 		prestige = 35
 		random_owned = { limit = { owner = { CAL = { exists = yes ai = yes } } } owner = { inherit = CAL } }
@@ -17489,7 +17487,7 @@ country_event = {
 		}
     }
     option = {
-        name = "All lands West of the Mississippi and Florida are Mexican. §RGain 20 infamy§W"
+        name = "All lands West of the Mississippi and Florida are Mexican. Â§RGain 20 infamyÂ§W"
 		badboy = 20
 		prestige = 30
 		random_owned = { limit = { owner = { CAL = { exists = yes ai = yes } } } owner = { inherit = CAL } }
@@ -17530,7 +17528,7 @@ country_event = {
 country_event = {
     id = 123574
     title = "A Peace with Mexico"
-    desc = "After losing the Mexican-American war, the Mexicans have decided to keep the land from the Adams-Onís Treaty."
+    desc = "After losing the Mexican-American war, the Mexicans have decided to keep the land from the Adams-OnÃ­s Treaty."
     picture = "mexico-us-treaty"
     fire_only_once = yes
     is_triggered_only = yes
@@ -17679,7 +17677,7 @@ country_event = {
         }
     }
     option = {
-        name = "The Russian Empire will not bow. §RGain 1 infamy§W"
+        name = "The Russian Empire will not bow. Â§RGain 1 infamyÂ§W"
         prestige = 15
         badboy = 1
         relation = {
@@ -18573,7 +18571,7 @@ country_event = {
     }
 
 	option = {
-        name = "Let's not cause conflict over a patch of jungle. §GLose 1 infamy§W"
+        name = "Let's not cause conflict over a patch of jungle. Â§GLose 1 infamyÂ§W"
         prestige = -3
 		badboy = -1
 		BRZ = { country_event = 123620 }
@@ -18761,7 +18759,7 @@ country_event = {
     }
 
     option = {
-        name = "Reject the arbitration! §RGain 1 infamy§W"
+        name = "Reject the arbitration! Â§RGain 1 infamyÂ§W"
         prestige = 3
 		badboy = 1
 		BRZ = { country_event = 123622 }
@@ -18773,7 +18771,7 @@ country_event = {
     }
 
 	option = {
-        name = "Agree to the arbitration. §GLose 1 infamy§W"
+        name = "Agree to the arbitration. Â§GLose 1 infamyÂ§W"
         prestige = -3
 		badboy = -1
 		BRZ = { country_event = 123623 }
